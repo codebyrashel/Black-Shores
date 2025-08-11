@@ -84,3 +84,33 @@ while (isRunning) {
         console.log("You have got " + rand);
     }
 }
+
+
+
+// Below is the While loop syntax and examples:
+
+// DO WHILE LOOP SYNTAX
+/*
+    do {
+        // code block to run
+    } while (condition);
+*/
+
+// Example 8: Do while loop - always runs at least once
+let counter = 0;
+
+do {
+    console.log("This will run even if the condition is false at first");
+    counter++; // increases counter by 1 on each loop
+} while (counter < 3);
+
+// Example 9: Random number generator with do while loop
+// This guarantees we get at least one random number before checking the condition
+let randomNum;
+
+do {
+    randomNum = Math.floor(Math.random() * 10 + 1);
+    console.log("You got: " + randomNum);
+} while (randomNum !== 7);
+
+console.log("Finally got lucky number 7!");
