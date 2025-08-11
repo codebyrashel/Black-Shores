@@ -1,7 +1,7 @@
 <table>
   <tr>
     <td width="180" align="center">
-      <img src="./black shores/black-shores.webp" alt="Black Shores" width="150" style="border-radius:16px;"/>
+      <img src="./Black-Shores/black-shores.webp" alt="Black Shores" width="150" style="border-radius:16px;"/>
     </td>
     <td width="30"></td> <!-- spacer -->
     <td align="left" valign="middle" style="min-width: 280px;">
@@ -13,7 +13,7 @@
     </td>
     <td width="30"></td> <!-- spacer -->
     <td width="180" align="center">
-      <img src="./black shores/img.png" alt="Rashel's Photo" width="150" style="border-radius:50%; border:4px solid #007acc;"/>
+      <img src="./Black-Shores/img.png" alt="Rashel's Photo" width="150" style="border-radius:50%; border:4px solid #007acc;"/>
     </td>
   </tr>
 </table>
