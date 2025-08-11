@@ -37,5 +37,11 @@ if (a > b || c > d) {
 let check = !(a > b)
 console.log(check)
 
+/*
+
 let check = !!(a > b)
 console.log(check)
+
+Output = true
+
+*/
