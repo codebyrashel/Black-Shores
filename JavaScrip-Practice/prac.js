@@ -62,3 +62,11 @@ switch(today){
         break
     default: console.log("Not a Valid Number")          
 }
+
+
+/** 
+
+Switch statement Problem set :
+
+
+**/
