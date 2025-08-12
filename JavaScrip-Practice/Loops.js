@@ -114,3 +114,76 @@ do {
 } while (randomNum !== 7);
 
 console.log("Finally got lucky number 7!");
+
+
+
+/*
+
+Js Loop calculator problem set requirement :
+
+
+Requirements:
+
+Create four separate functions for the following operations:
+
+Addition (add) → returns the sum of two numbers
+
+Subtraction (subtract) → returns the difference between two numbers
+
+Multiplication (multiply) → returns the product of two numbers
+
+Division (divide) → returns the result of dividing the first number by the second
+
+Create another function named calculator(a, b, operation) that:
+
+Takes two numbers (a and b) and a string (operation) as input
+
+Calls the appropriate function based on the value of operation ("add", "subtract", "multiply", "divide")
+
+Returns the result of the chosen operation
+
+If the operation is not recognized, return the string "This function is not defined".
+
+Call the calculator function with the arguments 20, 5, and "multiply", then print the result to the console.
+
+Write your code below:
+
+*/
+
+
+function add(num1, num2){
+    return num1 + num2
+}
+
+function subtract(num1, num2){
+    return num1 - num2
+}
+
+function multiply( num1, num2){
+    return num1 * num2
+}
+
+function divide(num1, num2){
+    return num1 / num2
+}
+
+function calclator(a, b, operation){
+    if(operation === "add"){
+        const result = add(a, b)
+        return result;
+    }else if(operation === "subtract"){
+        const result = subtract(a, b)
+        return result;
+    }else if (operation === "multiply"){
+        const result = multiply(a, b)
+        return result;
+    }else if(operation === "divide"){
+        const result = divide(a, b)
+        return result;
+    } else{
+        return "This function is not defined"
+    }
+}
+
+const result = calclator(20, 5, "multiply")
+console.log(result)
