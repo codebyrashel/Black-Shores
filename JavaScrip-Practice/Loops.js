@@ -187,3 +187,34 @@ function calclator(a, b, operation){
 
 const result = calclator(20, 5, "multiply")
 console.log(result)
+
+
+// ChatGpt Generated code using browser
+
+while (true) {
+    let num1 = parseFloat(prompt("Enter first number:"));
+    let operator = prompt("Enter operator (+, -, *, /):");
+    let num2 = parseFloat(prompt("Enter second number:"));
+
+    let result;
+
+    if (operator === "+") {
+        result = num1 + num2;
+    } else if (operator === "-") {
+        result = num1 - num2;
+    } else if (operator === "*") {
+        result = num1 * num2;
+    } else if (operator === "/") {
+        result = num2 !== 0 ? num1 / num2 : "Error: Division by zero!";
+    } else {
+        result = "Invalid operator!";
+    }
+
+    alert(`Result: ${result}`);
+
+    let again = prompt("Do you want to calculate again? (y/n)").toLowerCase();
+    if (again !== "y") {
+        alert("Calculator closed!");
+        break;
+    }
+}
