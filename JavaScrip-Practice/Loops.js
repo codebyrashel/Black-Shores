@@ -218,3 +218,119 @@ while (true) {
         break;
     }
 }
+
+
+
+
+
+// ==============================================
+// JavaScript Infinite Loop: What, Why, and How
+// ==============================================
+
+/*
+  What is an infinite loop?
+
+  - A loop that never stops running on its own.
+  - It keeps repeating forever (or until you force stop it).
+  - Usually caused by wrong or missing update conditions.
+
+  WARNING: Infinite loops can freeze your program or browser, so be careful!
+*/
+
+// ------------------------------------------------------
+// Example 1: Intentional infinite loop (using for loop)
+// ------------------------------------------------------
+
+console.log("Example 1: Infinite for loop")
+
+// This loop never ends because there is NO stopping condition (no i++ and no i <= limit check)
+for (let i = 1; ; i++) {
+    console.log("Loop is running infinitely! i =", i)
+
+    // To prevent freezing your program, let's stop manually after 10 iterations:
+    if (i >= 10) {
+        console.log("Manually breaking out after 10 iterations to prevent infinite loop.")
+        break // This stops the loop
+    }
+}
+
+/*
+How this works:
+- The for loop syntax normally: for (start; condition; update)
+- Here, condition is empty (treated as 'true'), so loop never ends naturally.
+- We added a manual break inside to prevent a crash.
+*/
+
+// ------------------------------------------------------
+// Example 2: Another infinite loop using while
+// ------------------------------------------------------
+
+console.log("\nExample 2: Infinite while loop")
+
+let count = 1
+
+while (true) { // 'true' means loop runs forever
+    console.log("Infinite while loop running! count =", count)
+
+    if (count === 5) {
+        console.log("Stopping infinite while loop after 5 iterations.")
+        break
+    }
+
+    count++
+}
+
+/*
+Why use infinite loops?
+
+- Sometimes you want the program to keep running until an event happens.
+- For example, servers that wait for user requests indefinitely.
+- Or games that run continuously until player quits.
+
+Remember: Always have a condition or break inside to avoid crashing your program.
+*/
+
+// ------------------------------------------------------
+// What causes accidental infinite loops?
+// ------------------------------------------------------
+
+/*
+Common causes:
+1) Forgetting to update the loop variable:
+
+for (let i = 0; i < 5; ) { // No i++ inside → runs forever
+    console.log(i)
+}
+
+2) Wrong loop condition:
+
+for (let i = 0; i != 10; i += 2) {
+    // If i skips over 10 (0, 2, 4, 6, 8, 12), condition never false
+}
+
+3) Logical errors where condition is always true.
+
+Always double-check your loop’s start, condition, and update parts.
+*/
+
+// ------------------------------------------------------
+// How to safely stop infinite loops in code editors or browsers:
+// ------------------------------------------------------
+
+/*
+- In browsers, infinite loops freeze the tab. Stop the script or close the tab.
+- In Node.js or terminals, use Ctrl + C to stop execution.
+- In VS Code debugger, press the pause or stop button.
+*/
+
+// ------------------------------------------------------
+// Summary:
+// ------------------------------------------------------
+
+/*
+- Infinite loops are loops without a natural end.
+- Can be useful but dangerous if not controlled.
+- Always have a condition or use break inside.
+- Test loops carefully!
+*/
+
