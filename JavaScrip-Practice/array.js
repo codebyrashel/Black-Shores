@@ -118,3 +118,109 @@ console.log(arr3);
 // ----------------------
 // - Use array literal [] most of the time. It's shorter, cleaner, and more common.
 // - Use Array() constructor rarely, mainly for special cases like creating a fixed-size array.
+
+
+
+
+
+// ====================================
+// 044. JS Array Traversing Examples
+// ====================================
+
+// Example 1: Accessing elements by index
+// ---------------------------------------
+const numbers1 = [4, 5, 8, 7, 2, 3, 50];
+
+// Accessing the last element
+const lastElement = numbers1[numbers1.length - 1];
+console.log("Last element:", lastElement); 
+// Output: Last element: 50
+
+
+// Example 2: Increasing each element by 5
+// ----------------------------------------
+const numbers2 = [4, 5, 8, 7, 2, 3, 50];
+
+// Loop through array and add 5 to each element
+for (let i = 0; i < numbers2.length; i++) {
+    numbers2[i] = numbers2[i] + 5;
+}
+console.log("Array after adding 5 to each element:", numbers2);
+// Output: Array after adding 5 to each element: [9, 10, 13, 12, 7, 8, 55]
+
+
+// Example 3: Summing all elements in the array
+// --------------------------------------------
+const numbers3 = [4, 5, 8, 7, 2, 3, 50];
+let sum = 0;
+
+for (let i = 0; i < numbers3.length; i++) {
+    sum += numbers3[i];
+}
+console.log("Sum of all elements:", sum);
+// Output: Sum of all elements: 79
+
+
+// Example 4: Filtering EVEN numbers
+// ----------------------------------
+const numbers4 = [4, 5, 8, 7, 2, 3, 50];
+console.log("Even numbers:");
+for (let i = 0; i < numbers4.length; i++) {
+    if (numbers4[i] % 2 === 0) {
+        console.log(numbers4[i]);
+    }
+}
+/*
+Output:
+Even numbers:
+4
+8
+2
+50
+*/
+
+
+// Example 5: Filtering ODD numbers
+// ---------------------------------
+const numbers5 = [4, 5, 8, 7, 2, 3, 50];
+console.log("Odd numbers:");
+for (let i = 0; i < numbers5.length; i++) {
+    if (numbers5[i] % 2 !== 0) {
+        console.log(numbers5[i]);
+    }
+}
+/*
+Output:
+Odd numbers:
+5
+7
+3
+*/
+
+
+// Example 6: Sum of EVEN and ODD numbers separately
+// -------------------------------------------------
+const numbers6 = [4, 5, 8, 7, 2, 3, 50];
+let evenSum = 0;
+let oddSum = 0;
+
+for (let i = 0; i < numbers6.length; i++) {
+    if (numbers6[i] % 2 === 0) {
+        evenSum += numbers6[i];
+    } else {
+        oddSum += numbers6[i];
+    }
+}
+
+console.log("Sum of even numbers:", evenSum); 
+// Output: Sum of even numbers: 64
+console.log("Sum of odd numbers:", oddSum);   
+// Output: Sum of odd numbers: 15
+
+
+
+
+
+
+
+
