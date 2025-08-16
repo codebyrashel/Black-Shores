@@ -50,10 +50,10 @@ Sample Output:
 //Answer:
 
 let matheMatics = 75.25;
-    Biology     = 65;
-    Chemistry   = 80;
-    Physics     = 35.45;
-    Bangla      = 99.50;
+let Biology     = 65;
+let Chemistry   = 80;
+let Physics     = 35.45;
+let Bangla      = 99.50;
 
 const totalMarks = (matheMatics + Biology + Chemistry + Physics + Bangla);
 
@@ -88,7 +88,7 @@ Sample Output:
 // Answer:
 
 let sum1 = 119;
-    sum2 = 4;
+let sum2 = 4;
 
 const totalSums = sum1 % sum2;
 console.log(totalSums);
