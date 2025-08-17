@@ -126,3 +126,72 @@ else{
     console.log('Go Home, Sleep and act sad')
 }
 
+
+
+
+/***
+
+you have two numbers in two variables, called: num1, num2
+
+now declare a variable called result. 
+if num1 is bigger than num2 then result will be double of num1. if not, then the value of the variable result will be the sum of num1 and num2.
+
+write a simple if-else. 
+
+also, write it using ternary operator.
+
+*/
+
+
+// Answer:
+
+let sum1 = 50;
+let sum2 = 20;
+let result = 0;
+
+if(sum1 > sum2){
+    result = sum1 + sum1
+}
+else{
+    result = sum1 + sum2
+}
+
+// Using ternary operator:
+
+sum1 > sum2 ? result = sum1 + sum1 : result = sum1 + sum2
+
+
+console.log(result);
+
+
+
+/***
+
+Ticket fare Calculator
+- Children (age < 10): free
+- Students get a 50% discount
+- Senior citizens (age >= 60) gets a 15% Discount
+- Otherwise Regular ticket fare 800 tk
+*/
+
+
+// Answer:
+
+let age = 17
+
+const ticketPrice = 800;
+
+if(age < 10){
+    console.log('Children can enter for free of charge')
+}
+else if(age < 18){
+    console.log('Student\'s gets 50% Discount')
+}
+else if(age >= 60){
+    console.log('You\'ll get a 15% Discount')
+}
+else{
+    console.log('Regular Price ticket price will be 800 BDT')
+}
+
+//js condition problem task all solved
