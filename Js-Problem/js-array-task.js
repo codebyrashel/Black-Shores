@@ -74,6 +74,26 @@ Print a message to the console indicating whether the element is present in the 
 
 */
 
+// Answer:
+
+const arr2 = ['math', 'bangla', 'physics', 'chemistry', 'history'];
+console.log(arr2.includes('history'));
+console.log(arr2.includes('Religion')); // checking the false output
+console.log('The element is present in the array: ', arr2);
+
+
+// ChatGpt Version Answer:
+
+const books = ['Math', 'Bangla', 'Physics', 'Chemistry', 'History', 'JavaScript'];
+
+// check if JavaScript book exists
+if (books.includes('JavaScript')) {
+    console.log("Yes, the array contains a JavaScript book.");
+} else {
+    console.log("No, the array does not contain a JavaScript book.");
+}
+
+
 
 /* 
 
@@ -88,6 +108,52 @@ Print a message to the console indicating whether each variable is an array or n
 
 */
 
+
+// Answer:
+
+const arrayCheck1 = [];                         // Array
+const arrayCheck2 = [1, 2, 3, 5, 7, 7, 9, 4];   // Array
+const arrayCheck3 = 'ainadsdoh';                // String (Not Array)
+const arrayCheck4 = { name: 'Rashel' };         // Object (Not Array)
+
+console.log(Array.isArray(arrayCheck1)); // true
+console.log(Array.isArray(arrayCheck2)); // true
+console.log(Array.isArray(arrayCheck3)); // false
+console.log(Array.isArray(arrayCheck4)); // false
+
+// Trying with if else condition (Experiment)
+
+if (Array.isArray(arrayCheck1)) {
+    console.log("arrayCheck1 is an Array");
+} else {
+    console.log("arrayCheck1 is NOT an Array");
+}
+
+if (Array.isArray(arrayCheck2)) {
+    console.log("arrayCheck2 is an Array");
+} else {
+    console.log("arrayCheck2 is NOT an Array");
+}
+
+if (Array.isArray(arrayCheck3)) {
+    console.log("arrayCheck3 is an Array");
+} else {
+    console.log("arrayCheck3 is NOT an Array");
+}
+
+if (Array.isArray(arrayCheck4)) {
+    console.log("arrayCheck4 is an Array");
+} else {
+    console.log("arrayCheck4 is NOT an Array");
+}
+
+// // Now using ternary operator
+
+// Array.isArray(arrayCheck1) ? Array.isArray(arrayCheck2) ? Array.isArray(arrayCheck3) : 
+console.log(Array.isArray(arrayCheck1) ? "Yes, Array" : "No, Not Array");
+console.log(Array.isArray(arrayCheck2) ? "Yes, Array" : "No, Not Array");
+console.log(Array.isArray(arrayCheck3) ? "Yes, Array" : "No, Not Array");
+console.log(Array.isArray(arrayCheck4) ? "Yes, Array" : "No, Not Array");
 
 
 /* 
