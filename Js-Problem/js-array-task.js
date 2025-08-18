@@ -166,3 +166,23 @@ Use the concat method to combine the two arrays into a new array.
 Print both the original arrays and the combined array using console.log().
 
 */
+
+
+// Answer:
+
+
+const arrayConcat1 = ['Android', 'Iphone', 'Mac'];
+const arrayConcat2 = ['Linax', 'HyperOS', 'Windows'];
+
+console.log('Checking the first Array: ', arrayConcat1);
+console.log('Checking the second Array: ', arrayConcat2);
+
+console.log('After ConCatening both Array: ', arrayConcat1.concat(arrayConcat2));
+
+// Another try via storing the array in a variable and Combining arrays
+
+const combinedArray = arrayConcat1.concat(arrayConcat2);
+
+console.log('After Concatenating:', combinedArray);
+
+// Js Array Task all Complete
