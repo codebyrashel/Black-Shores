@@ -158,6 +158,20 @@ Implement a countdown timer that counts down from 21 to 15.
 
 // Answer:
 
+let c = 21;
+
+while(c >= 15){
+    console.log('Countdown: ', c);
+    c--;
+}
 
 
+//--------------------------Now Using For Loop-------------------//
 
+/***
+
+"I will invest at least 6 hrs every single day for next 60 days!" this message 60 times. So display this.
+
+*/
+
+/*programming hero*/
