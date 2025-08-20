@@ -175,3 +175,138 @@ while(c >= 15){
 */
 
 /*programming hero*/
+
+// Answer:
+
+for(let i = 1; i <= 60; i++){
+    console.log(i, 'I\'ll invest at least 6 hrs every single day for the next 60 days!');
+}
+
+
+/***
+
+Subtask-1:
+
+Find all the odd numbers from 61 to 100.
+
+*/
+
+// Answer:
+
+for(let i = 61; i <= 100; i= i + 2){
+    console.log('Odd =', i);
+}
+
+//another method
+
+for(let i = 61; i <= 100; i++){
+    if(i % 2 === 1){
+        console.log('This is odd number: ', i);
+    }
+}
+
+/***
+
+Subtask-2:
+
+Find all the even numbers from 78 to 98.
+
+*/
+
+// Answer:
+
+for(let i = 78; i <= 98; i= i + 2){
+    console.log('Even =', i);
+}
+
+//another method
+
+for(let i = 78; i <= 100; i++){
+    if(i % 2 === 0){
+        console.log('This is even number: ', i);
+    }
+}
+
+/*programming hero*/
+
+
+/***
+
+Subtask-1:
+
+Display sum of all the odd numbers from 91 to 129.
+
+*/
+
+//Answer:
+
+let totalResult = 0;
+for(let i = 91; i <= 129; i++){
+    if(i % 2 === 1){
+        totalResult += i
+    }
+}
+console.log('Sum is: ', totalResult);
+
+
+/***
+
+Subtask-2:
+
+Display sum of all the even numbers from 51 to 85.
+
+*/
+
+//Answer:
+
+let totalEvenSum = 0;
+for(let i = 51; i <= 85; i++){
+    if( i % 2 === 0){
+        totalEvenSum += i;
+    }
+}
+
+console.log('Sum of all even numbers is ', totalEvenSum);
+
+/*programming hero*/
+
+
+/***
+
+Generate a multiplication table for number 9
+
+*/
+
+
+let multiplySecond = 9
+for(let i = 1; i <= 9; i++){
+    console.log(i + ' x ' + multiplySecond + ' = ' (i * multiplySecond));
+}
+
+// Using while loop method
+
+let multiplyNumber = 9;
+let multiply = 1;
+
+while(multiplyNumber <= 10){
+    console.log(number + ' x ' + multiplyNumber + ' = ' + (number * multiplyNumber));
+    number * multiplyNumber;
+    multiplyNumber++
+}
+
+
+/*programming hero*/
+
+
+/***
+
+Implement a countdown timer that counts down from 81 to 65.
+
+*/
+//Answer:
+
+for(let i = 81; i >= 65; i--){
+    console.log('Countdown: ', i);
+}
+
+/*programming hero*/
