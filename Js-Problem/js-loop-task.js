@@ -315,6 +315,34 @@ for(let i = 81; i >= 65; i--){
 /* 
 Write a loop to print even numbers from 1 to 40. Use continue to skip odd numbers.
 */
+// Answer:
+
+for(let i = 1; i <= 40; i++){
+    if(i % 2 === 1){
+        continue
+    } 
+    console.log(i)
+}
+
+// Another method:
+
+for(let i = 1; i <= 40; i++){
+    if(i % 2 !== 0){
+        continue
+    }
+    console.log(i);
+}
+
+// Now experimenting for printing odd number:
+
+for(let i = 1; i <= 40; i++){
+    if(i % 2 !== 1){
+        continue
+    }
+    console.log(i);
+}
+
+
 
 
 /*
