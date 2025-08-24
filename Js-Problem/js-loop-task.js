@@ -398,15 +398,15 @@ Write a while loop that adds numbers starting from 1, but stops (using break) as
 
 // Answer :
 
-let n = 1;
-let sum = 0;
+let n2 = 1;
+let sum2 = 0;
 
 while (true) {
-    sum += n;
-    if (sum >= 100) {
+    sum2 += n2;
+    if (sum2 >= 100) {
         break;  // stop when sum reaches or exceeds 100
     }
-    n++;
+    n2++;
 }
 
 console.log("Final n:", n);

@@ -156,3 +156,13 @@ console.log('aodfhnaoisndfpoaisncdpasnc'.length) // Output: 26
 // - Use string methods (concat, split, trim, etc.) for text manipulation.
 // - Understanding lexicographic comparison helps in sorting and searching.
 // ==============================================
+
+
+//---------------Programming hero Note----------------//
+// ==============================================
+// - String is immutable --> Not Changeable
+// - Array is mutable --> You can change the Array elements
+
+
+
+
