@@ -163,6 +163,38 @@ console.log('aodfhnaoisndfpoaisncdpasnc'.length) // Output: 26
 // - String is immutable --> Not Changeable
 // - Array is mutable --> You can change the Array elements
 
+//   Once created, the value of a string cannot be altered directly.
+//   Any modification returns a *new* string instead of changing the original.
+
+let str = "Hello";
+str[0] = "Y";    //  This does nothing
+console.log(str); // Output: "Hello"
+
+let newStr = str + " World";  
+console.log(newStr); // Output: "Hello World"
+// Notice: str stayed the same, only newStr was created
 
 
+// - Array is mutable --> You can change the Array elements
+//   You can add, remove, or replace items inside an array.
+
+let arr = [1, 2, 3];
+arr[0] = 99;   // You can modify directly
+console.log(arr); // Output: [99, 2, 3]
+
+arr.push(4);   // Add new element
+console.log(arr); // Output: [99, 2, 3, 4]
+
+arr.pop();     // Remove last element
+console.log(arr); // Output: [99, 2, 3]
+
+// Extra Example: Strings vs Arrays
+// --------------------------------
+// You cannot "push" into a string, but you can push into an array.
+
+let text = "ABC";
+// text.push("D"); // Error: strings don’t support push
+let letters = ["A", "B", "C"];
+letters.push("D"); // Works
+console.log(letters); // Output: ["A", "B", "C", "D"]
 
