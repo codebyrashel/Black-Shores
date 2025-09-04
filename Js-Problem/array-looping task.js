@@ -11,6 +11,26 @@ Output:
 ['orange', 'yellow', 'green', 'blue', 'red']
 */
 
+// Answer Using method 1
+
+// using for of
+
+const colors = ['red', 'blue', 'green', 'yellow', 'orange'];
+
+const task1 = [];
+for(const rev of colors){
+    console.log(rev);
+    task1.unshift(rev);
+}
+console.log(task1);
+
+
+
+
+
+
+
+
 /*
 
 Task 2
