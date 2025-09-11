@@ -148,5 +148,79 @@ console.log(result3);
 // Task-4
 // Write a function called count_zero() which will take a binary string (Binary string is a string which is consist of only 0 and 1) as parameter and count how many 0’s are there in that string.
 
+// Answer :
+
+function count_zero(binaryString) {
+    let count = 0;           // Step 1: counter
+    for (let char of binaryString) {   // Step 2: loop
+        if (char === '0') {           // Step 3: check
+            count += 1;
+        }
+    }
+    return count;             // Step 4: return total zeros
+}
+
+const result = count_zero("1010010");
+console.log(result); // 4
+
+
+// Another Task:
+
+// Sub Task 1 – Count ones
+
+// Write a function called count_one() that takes a binary string (only 0s and 1s) and returns how many 1s are in that string.
+
+// Example:
+
+// Input: "1010010"
+// Output: 3
+
+// Answer:
+
+function count_one(str2){
+    let count1 = 0;
+    for(let charTwo of str2){
+        if( charTwo === "0"){
+            count1 += 1;
+        }
+    }
+    return count1;
+}
+
+const binaryStringTwo = "10100100";
+
+const subtaskOne = count_one(binaryStringTwo);
+
+console.log(subtaskOne);
+
+// Sub Task 1 solve with some minor failed attempt
+
+// Sub Task 2 – Count vowels in a string
+
+// Write a function called count_vowels() that takes a string and returns the number of vowels (a, e, i, o, u) in it.
+
+// Example:
+
+// Input: "hello world"
+// Output: 3  // 'e', 'o', 'o'
+
+// Answer:
+
+function count_vowels(str3){
+    let vowelCount = 0;
+    for( let charThree of str3){
+        if(charThree === "e" || charThree === "o"){
+            vowelCount += 1;
+        }
+    }
+    return vowelCount;
+}
+
+const word = "hello world";
+const vowelCount = count_vowels(word);
+console.log(vowelCount);
+
+// Sub Task 2 Successfully solved without any failed or help
+
 // Task-5
 // Write a function called odd_even() which takes an integer value and tells whether this value is even or odd. If even return Even. If odd return Odd
