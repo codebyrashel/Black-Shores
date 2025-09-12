@@ -16,3 +16,18 @@ function odd_even(intValue){
 
 const checkNumber = odd_even(5);
 console.log(checkNumber);
+
+
+function Twoodd(year){
+    for(const leap of year){
+        if(leap % 4 === 0){
+            return true
+        }
+        else{
+            return false
+        }
+    }
+}
+
+const lipi = Twoodd(2100);
+console.log(lipi);
