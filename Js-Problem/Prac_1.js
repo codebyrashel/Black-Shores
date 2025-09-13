@@ -1,6 +1,17 @@
 // Task-1:
 // Write a function to convert temperature from Celsius to Fahrenheit.
 
+// Answer:
+
+
+// (2°C × 9/5) + 32 = 35.6°F
+function CelFahrenheit(temp) {
+    return (temp * 9 / 5) + 32
+}
+
+const temperature = CelFahrenheit(8);
+console.log(temperature);
+
 // Task-2:
 // You are given an array of numbers. Count how many times the a number is repeated in the array.
 
@@ -9,7 +20,6 @@
 // find: 5
 
 // output: 2
-
 
 // sample-input:
 
