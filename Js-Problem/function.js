@@ -11,9 +11,6 @@ function multiplyFourNumbers(a, b, c, d) {
 const multiply = multiplyFourNumbers(1, 2, 3, 4);
 console.log(multiply);
 
-
-
-
 // Task-2
 // Take a number if the number is odd multiply it by 2 and return the result. If the number is even divide it by two and return the result.
 
@@ -21,11 +18,11 @@ console.log(multiply);
 
 function doMath(num1) {
     if (num1 % 2 === 1) {
-        let result = num1 * 2
-        return result
+        let result = num1 * 2;
+        return result;
     } else {
-        let result = num1 / 2
-        return result
+        let result = num1 / 2;
+        return result;
     }
 }
 
@@ -33,7 +30,7 @@ function doMath(num1) {
 
 const result = doMath(9);
 
-console.log(result)
+console.log(result);
 
 // I did with many experiment and using my own thinking
 
@@ -49,8 +46,6 @@ function doMath(num1) {
 
 const result2 = doMath(10);
 console.log(result2); // 5
-
-
 
 // Task-3
 // Write a function called make_avg() which will take an array of integers and the size of that array and return the average of those values.
@@ -97,19 +92,19 @@ function find_max(arr) {
 
     // Loop through each number in the array
     for (let number of arr) {
-        if (number > largest) {  // If current number is bigger
-            largest = number;    // Update largest
+        if (number > largest) {
+            // If current number is bigger
+            largest = number; // Update largest
         }
     }
 
-    return largest;  // Return the final largest number
+    return largest; // Return the final largest number
 }
 
 const arrInteger = [4, 7, 1, 99, 23];
 const answer = find_max(arrInteger);
 
 console.log(answer); // 99
-
 
 // Task:
 
@@ -121,20 +116,19 @@ console.log(answer); // 99
 
 // Output: { min: 1, max: 99 }
 
-function find_min_max(arr2){
+function find_min_max(arr2) {
     let minimum = arr2[0];
     let max = arr2[0];
-    for(let number of arr2){
-        if(number < minimum){
-            minimum = number
-        }
-        else{
-            if(number > max){
-                max = number
+    for (let number of arr2) {
+        if (number < minimum) {
+            minimum = number;
+        } else {
+            if (number > max) {
+                max = number;
             }
         }
     }
-    return {max, minimum};
+    return { max, minimum };
 }
 
 const minMax = [4, 7, 1, 99, 23];
@@ -151,18 +145,19 @@ console.log(result3);
 // Answer :
 
 function count_zero(binaryString) {
-    let count = 0;           // Step 1: counter
-    for (let char of binaryString) {   // Step 2: loop
-        if (char === '0') {           // Step 3: check
+    let count = 0; // Step 1: counter
+    for (let char of binaryString) {
+        // Step 2: loop
+        if (char === "0") {
+            // Step 3: check
             count += 1;
         }
     }
-    return count;             // Step 4: return total zeros
+    return count; // Step 4: return total zeros
 }
 
 const result = count_zero("1010010");
 console.log(result); // 4
-
 
 // Another Task:
 
@@ -177,10 +172,10 @@ console.log(result); // 4
 
 // Answer:
 
-function count_one(str2){
+function count_one(str2) {
     let count1 = 0;
-    for(let charTwo of str2){
-        if( charTwo === "0"){
+    for (let charTwo of str2) {
+        if (charTwo === "0") {
             count1 += 1;
         }
     }
@@ -206,10 +201,10 @@ console.log(subtaskOne);
 
 // Answer:
 
-function count_vowels(str3){
+function count_vowels(str3) {
     let vowelCount = 0;
-    for( let charThree of str3){
-        if(charThree === "e" || charThree === "o"){
+    for (let charThree of str3) {
+        if (charThree === "e" || charThree === "o") {
             vowelCount += 1;
         }
     }
@@ -227,12 +222,11 @@ console.log(vowelCount);
 
 // Answer:
 
-function odd_even(intValue){
-    if(intValue % 2 === 0){
-        return "even"
-    }
-    else{
-        return "odd"
+function odd_even(intValue) {
+    if (intValue % 2 === 0) {
+        return "even";
+    } else {
+        return "odd";
     }
 }
 

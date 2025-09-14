@@ -15,6 +15,26 @@ console.log(temperature);
 // Task-2:
 // You are given an array of numbers. Count how many times the a number is repeated in the array.
 
+// Task-2: Count how many times each number is repeated in the array
+
+let numbers = [1, 2, 2, 3, 4, 4, 4, 5, 1, 2];
+
+let count = {};
+
+for (let num of numbers) {
+  if (count[num]) {
+    count[num] += 1;  // If number already exists, increase count
+  } else {
+    count[num] = 1;   // Otherwise, initialize with 1
+  }
+}
+
+// Print result
+for (let key in count) {
+  console.log(`Number ${key} is repeated ${count[key]} time(s).`);
+}
+
+
 // sample-input: numbers = [5,6,11,12,98, 5]
 
 // find: 5
