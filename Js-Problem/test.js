@@ -1,86 +1,33 @@
-// Task-2:
-// You are given an array of numbers. Count how many times the a number is repeated in the array.
+// Task-3:
+// Write a function to count the number of vowels in a string.
 
-// Task-2: Count how many times each number is repeated in the array
-
-let numbers = [1, 2, 2, 3, 4, 4, 4, 5, 1, 2];
-
-let count = {}; //hashmap
-
-for (let num of numbers) {
-  if (count[num]) {
-    count[num] += 1;  // If number already exists, increase count
-  } else {
-    count[num] = 1;   // Otherwise, initialize with 1
-  }
-}
-
-// Print result
-for (let key in count) {
-  console.log(`Number ${key} is repeated ${count[key]} time(s).`);
-}
-
-// Sub-task 1:
-
-// You are given an array of numbers.
-// Find the first number that is repeated in the array.
-
-// Example:
-// Input: [3, 5, 2, 3, 7, 5]
-// Output: The first repeated number is 3
-
-
-let array = [3, 5, 2, 3, 7, 5];
-
-let empty = {};
-
-for(num of array){
-    // console.log(empty);
-    if (empty[num]){
-        // console.log(empty);
-        // empty[num] += 1;
-        console.log("The first repeated number is " + num);
-        break
+function vowelsCount (count){
+    let vowelCount = 0;
+    for(let char of count){
+        if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u"){
+            vowelCount ++; 
+        }
     }
-    else{
-        // console.log(empty);
-        empty[num] = 1;
-    }
+    return vowelCount;
 }
 
-// Sub-task 2:
+const normalString = vowelsCount("How quickly daft jumping zebras vex my boy");
 
-// You are given an array of numbers.
-// Find the number that is repeated the most and print how many times it occurs.
+console.log(normalString);
 
-// Example:
-// Input: [4, 1, 4, 2, 4, 3, 2, 2, 2]
-// Output: The number 4 is repeated 3 times (most repeated)
+// With few failed attempt This one is mine as I solved it with the knowledge I had, Now below will be the solution given by the AI
 
-let repeatedNumbers = [4, 1, 4, 2, 4, 3, 2, 2, 2];
+// Shorter version 
 
-let stored = {};
-
-// Step 1: Count frequencies
-for (let num of repeatedNumbers) {
-    if (stored[num]) {
-        stored[num] += 1;
-    } else {
-        stored[num] = 1; // cleaner than "+1"
+function vowelsCount(str) {
+    const vowels = "aeiou";
+    let count = 0;
+    for (let char of str.toLowerCase()) {
+        if (vowels.includes(char)) count++;
     }
+    return count;
 }
 
-console.log("Frequencies:", stored); // just to see the counts
+// Another one using one line 
 
-// Step 2: Find the most repeated number
-let maxCount = 0;
-let mostRepeated;
-
-for (let key in stored) {
-    if (stored[key] > maxCount) {
-        maxCount = stored[key];
-        mostRepeated = key;
-    }
-}
-
-console.log(`The number ${mostRepeated} is repeated ${maxCount} times (most repeated).`);
+const vowelsCount = str => [...str.toLowerCase()].filter(c => "aeiou".includes(c)).length;

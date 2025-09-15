@@ -17,6 +17,20 @@ console.log(temperature);
 
 // Task-2: Count how many times each number is repeated in the array
 
+// sample-input: numbers = [5,6,11,12,98, 5]
+
+// find: 5
+
+// output: 2
+
+// sample-input:
+
+// numbers = [5,6,11,12,98, 5]
+
+// find: 25
+
+// output: 0
+
 let numbers = [1, 2, 2, 3, 4, 4, 4, 5, 1, 2];
 
 let count = {}; //hashmap
@@ -100,22 +114,110 @@ for (let key in stored) {
 console.log(`The number ${mostRepeated} is repeated ${maxCount} times (most repeated).`);
 
 
-// sample-input: numbers = [5,6,11,12,98, 5]
+// You are given an array of numbers.
+// Find the least repeated number (the one with the smallest frequency).
 
-// find: 5
+// Example:
+// Input: [6, 6, 7, 7, 7, 8]
+// Output:
 
-// output: 2
+// The number 8 is repeated 1 time (least repeated)
 
-// sample-input:
 
-// numbers = [5,6,11,12,98, 5]
+let subArray = [1, 2, 2, 3, 4, 4, 5, 4];
 
-// find: 25
+let arrayStored = {};
 
-// output: 0
+// Count frequencies
+for (let num of subArray) {
+    if (arrayStored[num]) {
+        arrayStored[num] += 1;
+    } else {
+        arrayStored[num] = 1;
+    }
+}
+console.log("Frequencies:", arrayStored);
+
+// Print only numbers repeated more than once
+for (let key in arrayStored) {
+    if (arrayStored[key] > 1) {
+        console.log(`Number ${key} is repeated ${arrayStored[key]} times`);
+    }
+}
+
+
+// Sub-task 4
+
+// You are given an array of numbers.
+// Find the least repeated number (the one with the smallest frequency).
+
+// Example:
+// Input: [6, 6, 7, 7, 7, 8]
+// Output:
+
+// The number 8 is repeated 1 time (least repeated)
+
+let lastArray = [6, 6, 7, 7, 7, 8];
+let lastStored = {};
+
+// Count frequencies
+for (let arr of lastArray) {
+    if (lastStored[arr]) {
+        lastStored[arr] += 1;
+    } else {
+        lastStored[arr] = 1;
+    }
+}
+
+console.log("Frequencies:", lastStored);
+
+let leastCount = Infinity;  // start with very large number
+let leastRepeated;
+
+for (let key in lastStored) {
+    if (lastStored[key] < leastCount) {
+        leastCount = lastStored[key];
+        leastRepeated = key;
+    }
+}
+
+console.log(`The least repeated number is ${leastRepeated}, repeated ${leastCount} time(s).`);
+
 
 // Task-3:
 // Write a function to count the number of vowels in a string.
+
+function vowelsCount (count){
+    let vowelCount = 0;
+    for(let char of count){
+        if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u"){
+            vowelCount ++; 
+        }
+    }
+    return vowelCount;
+}
+
+const normalString = vowelsCount("How quickly daft jumping zebras vex my boy");
+
+console.log(normalString);
+
+// With few failed attempt This one is mine as I solved it with the knowledge I had, Now below will be the solution given by the AI
+
+// Shorter version 
+
+function vowelsCount(str) {
+    const vowels = "aeiou";
+    let count = 0;
+    for (let char of str.toLowerCase()) {
+        if (vowels.includes(char)) count++;
+    }
+    return count;
+}
+
+// Another one using one line 
+
+const vowelsCount = str => [...str.toLowerCase()].filter(c => "aeiou".includes(c)).length;
+
 
 // Task-4:
 // Write a function to find the longest word in a given string.
