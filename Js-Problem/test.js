@@ -1,23 +1,9 @@
-// Task-4:
-// Write a function to find the longest word in a given string.
+// Task-3:
+// Your task is to calculate the total budget required to buy electronics:
 
-let sentence = "I don't know Programming";
+//     laptop = 35000 tk
+//     tablet = 15000 tk
+//     mobile = 20000 tk
+// Write a JavaScript function named calculateElectronicsBudget that takes in the number of laptop, tablets, and mobile and returns the total money required.
 
-function findLongestWord(inputString) {
-    let words = inputString.split(" ");
-    let longestWord = words[0];
 
-    for (let word of words) {
-        if (word.length > longestWord.length) {
-            longestWord = word;
-        }
-    }
-
-    return longestWord;
-}
-
-const result = findLongestWord(sentence);
-
-console.log(result);
-
-// console.log(findLongestWord(sentence));
