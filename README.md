@@ -18,52 +18,51 @@
   </tr>
 </table>
 
-> ⚠️ **All Rights Reserved © 2025**  
+> **All Rights Reserved © 2025**  
 > Unauthorized copying, replication, or distribution of this repository, its structure, design, and contents is strictly prohibited.
 
 ---
 
-## 🛡️ Purpose & Intentions
+## Purpose & Intentions
 
 This repository is my **exclusive personal coding journal and practice space** — meticulously organized, designed, and maintained to track my growth as a full-stack developer and software engineer.
 
-- Every project and practice is carefully structured and committed here.  
-- The structure, layout, and design of this repo, including this README, are **intellectual property** and should not be copied or reused elsewhere.  
-- This is a **private creative workspace**.  
+- Every project and practice is carefully structured and committed here.
+- The structure, layout, and design of this repo, including this README, are **intellectual property** and should not be copied or reused elsewhere.
+- This is a **private creative workspace**.
 
 ---
 
-## 🔒 Repository Access
+## Repository Access
 
 To protect my work and learning journey:
 
-- This repository is **set to private** on GitHub.  
-- If you see this publicly, please note: **the content here is for my eyes only and any use without explicit permission is forbidden.**  
+- This repository is **set to private** on GitHub.
+- If you see this publicly, please note: **the content here is for my eyes only and any use without explicit permission is forbidden.**
 
 ---
-
 
 Each folder isolates an exercise or project, maintaining clarity and ease of navigation.
 
 ---
 
-## 🎯 My Goals
+## My Goals
 
-- Daily commits to build coding discipline and a strong GitHub profile.  
-- Master multiple technologies: JavaScript, HTML, CSS, Tailwind CSS, and more.  
-- Keep a clean, well-documented log of learning progress.  
-- Refine my Git skills and code organization.  
+- Daily commits to build coding discipline and a strong GitHub profile.
+- Master multiple technologies: JavaScript, HTML, CSS, Tailwind CSS, and more.
+- Keep a clean, well-documented log of learning progress.
+- Refine my Git skills and code organization.
 
 ---
 
-## ⚠️ Usage & Distribution
+## Usage & Distribution
 
 **This repository and its contents are protected by copyright laws.**  
 By viewing or accessing this repo, you agree not to:
 
-- Copy, clone, or replicate the repo structure or design.  
-- Redistribute or share any part of this code or documentation.  
-- Use any materials here for commercial or non-personal purposes without my explicit written consent.  
+- Copy, clone, or replicate the repo structure or design.
+- Redistribute or share any part of this code or documentation.
+- Use any materials here for commercial or non-personal purposes without my explicit written consent.
 
 Violations may result in legal actions.
 
@@ -80,9 +79,9 @@ No permissions are granted to use, distribute, or modify without explicit permis
 
 To inquire about collaboration or usage permissions, contact me:
 
-- LinkedIn: [Your LinkedIn URL]  
-- Email: [Your Email]  
+- LinkedIn: [Your LinkedIn URL]
+- Email: [Your Email]
 
 ---
 
-*Thank you for respecting my work and the journey it represents.*
+_Thank you for respecting my work and the journey it represents._
