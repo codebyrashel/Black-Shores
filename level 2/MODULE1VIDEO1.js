@@ -122,3 +122,256 @@ const NewUpdateCourse = courses.map((courses) => {
 })
 
 console.log(NewUpdateCourse);
+
+
+
+
+const users = [
+  { name: "Rashel", points: 90 },
+  { name: "Tomjid", points: 75 },
+  { name: "Anamul", points: 82 },
+];
+
+
+users.forEach((users) => {
+    console.log(`${users.name} + ${users.points}`);
+});
+
+
+const NewArr = users.map((users) => {
+    return {
+        name: users.name,
+        points: users.points,
+        rank: users.points >= 85 ? "Gold" : "Silver"
+
+    }
+});
+
+console.log(NewArr);
+
+
+
+
+
+
+
+// Problem 1: Course Info Formatter
+
+const courses = [
+  { title: "HTML Basics", students: 25 },
+  { title: "CSS Mastery", students: 40 },
+  { title: "JavaScript Advanced", students: 55 },
+];
+
+
+// Tasks:
+
+// Use forEach() to print each course like this:
+
+// HTML Basics has 25 students.
+// CSS Mastery has 40 students.
+// JavaScript Advanced has 55 students.
+
+// Use map() to create a new array of course titles only.
+// Example output:
+
+// ["HTML Basics", "CSS Mastery", "JavaScript Advanced"]
+
+// Use map() to create a new array of objects where each object includes an extra property:
+
+// {
+//   title: "HTML Basics",
+//   students: 25,
+//   category: "popular" // if students >= 40 else "regular"
+// }
+
+// Answer
+
+courses.forEach((courses) => {
+    console.log(`${courses.title} has ${courses.students} students`);
+});
+
+
+const courseTitleOnly = courses.map((courses) => {
+    return courses.title
+});
+
+console.log(courseTitleOnly);
+
+
+const extraProperty = courses.map((courses) => {
+    return {
+        title: courses.title,
+        students: courses.students,
+        category: courses.students >= 40 ? "popular" : "regular" // if students >= 40 else "regular"
+    };
+});
+
+console.log(extraProperty);
+
+
+
+
+
+
+// Problem Set 2 — “Library Books”
+
+const books = [
+  { name: "Atomic Habits", pages: 300 },
+  { name: "Deep Work", pages: 270 },
+  { name: "Clean Code", pages: 420 },
+];
+
+// Tasks:
+
+// Use forEach() to print each book in this format:
+// "Book: Atomic Habits has 300 pages."
+
+// Answer:
+
+books.forEach((books) => {
+    console.log(`Book: ${books.name} has ${books.pages} pages`);
+});
+
+
+
+// Use map() to create an array of page counts.
+// Example output: [300, 270, 420]
+
+// Answer:
+
+const arrPageCount = books.map((books) =>{
+    return books.pages;
+});
+
+console.log(arrPageCount);
+
+
+
+// Use map() to create a new array where you add isLong property:
+// true if pages > 300, else false.
+
+
+// Answer:
+
+const longProperty = books.map((books) =>{
+    return {
+        name: books.name,
+        pages: books.pages,
+        islong: books.pages >= 300 ? "true" : "false"
+    };
+});
+
+console.log(longProperty);
+
+
+
+
+
+// Problem Set 4 — “Store Inventory”
+
+
+const items = [
+  { name: "Laptop", price: 800 },
+  { name: "Mouse", price: 20 },
+  { name: "Keyboard", price: 50 },
+];
+
+// Tasks:
+
+// Use forEach() to print:
+// "Laptop costs $800"
+
+// Answer:
+
+items.forEach((items) => {
+    console.log(`${items.name} cost ${items.price}`);
+});
+
+
+// Use map() to return an array of prices multiplied by 1.1 (10% tax added).
+// Example: [880, 22, 55]
+
+//Answer:
+
+const multiplied = items.map((items) =>{
+    return Math.floor((items.price * 1.1));
+});
+
+console.log(multiplied);
+
+
+// Use map() to create a new array of objects adding a category:
+
+// "expensive" if price ≥ 100
+
+// "cheap" otherwise
+
+
+// Answer:
+
+const newMap = items.map((items) => {
+    return {
+        name: items.name,
+        price: items.price,
+        category: items.price >= 100 ? "expensive" : "cheap"
+    };
+});
+
+console.log(newMap);
+
+
+
+
+// Bonus Problem — combine logic thinking
+
+// You have this:
+
+const languages = ["JavaScript", "Python", "C++", "Java", "Go"];
+
+// Tasks:
+
+// Use forEach() to print the index + language name (e.g., "1: JavaScript").
+
+languages.forEach((name, index) => { 
+    console.log(index, name);
+});
+
+
+
+// Use map() to return a new array of string lengths (how many characters each language has).
+// Example: [10, 6, 3, 4, 2]
+
+//Answer:
+
+// const characterCount = languages.map((languages) => {
+
+//     return languages.length
+    
+// });
+
+const characterCount = languages.map((languages) => languages.length );  // one liner solution
+
+
+console.log(characterCount);
+
+
+
+// Use map() to create an array of objects like this:
+
+// { name: "JavaScript", length: 10 }
+
+// Answer
+
+const arrObj = languages.map((lang) => {
+  return {
+    name: lang,
+    length: lang.length
+  };
+});
+
+console.log(arrObj);
+
+const shorterVersion = languages.map((languages) => ({name: languages, length: languages.length})); // one liner version
+
+console.log(shorterVersion);
